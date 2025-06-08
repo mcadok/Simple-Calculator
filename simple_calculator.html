@@ -2,32 +2,36 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kalk.css">
 </head>
 <body>
-    <input id="wpis"><br>
-
-    <button onclick="dodaj_do_input(9)">9</button>
-    <button onclick="dodaj_do_input(8)">8</button>
-    <button onclick="dodaj_do_input(7)">7</button>
-    <button onclick="wyborOpX('odejmowanie')">-</button><br>
-
-    <button onclick="dodaj_do_input(6)">6</button>
-    <button onclick="dodaj_do_input(5)">5</button>
-    <button onclick="dodaj_do_input(4)">4</button>
-    <button onclick="wyborOpX('mnozenie')">*</button><br>
-
-    <button onclick="dodaj_do_input(3)">3</button>
-    <button onclick="dodaj_do_input(2)">2</button>
-    <button onclick="dodaj_do_input(1)">1</button>
-    <button onclick="wyborOpX('dzielenie')">/</button><br>
-
-    <button onclick="wyborOpX('dodawanie')">+</button>
-    <button onclick="dodaj_do_input(0)">0</button>
-    <button onclick="RownaSie()">=</button>
-    <button ondblclick="dodaj_do_input('.')">.</button><br>
-    <button onclick="ResetC()">Clear</button>
     
-    <script src="simple_calc_script.js"></script>
+    <div class="calc">
+    <input id="mod1"><br>
+
+    <button onclick="dod_input(1)">1</button>
+    <button onclick="dod_input(2)">2</button>
+    <button onclick="dod_input(3)">3</button>
+    <button onclick="wybor_op('dod')">+</button>
+
+    <button onclick="dod_input(4)">4</button>
+    <button onclick="dod_input(5)">5</button>
+    <button onclick="dod_input(6)">6</button>
+    <button onclick="wybor_op('ode')">-</button>
+
+    <button onclick="dod_input(7)">7</button>
+    <button onclick="dod_input(8)">8</button>
+    <button onclick="dod_input(9)">9</button>
+    <button onclick="wybor_op('dzi')">/</button>
+
+    <button onclick="wybor_op('mno')">*</button>
+    <button onclick="dod_input(0)">0</button>
+    <button onclick="rowna_sie()">=</button>
+    <button onclick="dod_input('.')">.</button>
+
+    <button onclick="reset_C()">Reset</button>
+    </div>
+
+    <script src="kalk.js"></script>
 </body>
 </html>
